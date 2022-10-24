@@ -6,6 +6,9 @@ body {
     max-width: 1024px;
     margin: 0 auto;
     overflow-y: scroll;
+    min-height: 92vh;
+    /* display:flex; */
+    /* flex-direction:column; */
 }
 
 h2 {
@@ -117,7 +120,7 @@ article {
 }
 
 footer {
-    margin : auto;
+    margin-top : auto;
     max-width: 1024px;
     padding-left: 2rem;
     padding-right: 2rem;
@@ -126,5 +129,6 @@ footer {
     overflow: auto;
     text-align: center;
     bottom: 0;
-    position: relative;
+    position: relative ;
+
 }
