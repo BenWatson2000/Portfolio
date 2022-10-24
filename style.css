@@ -11,14 +11,52 @@ h2 {
     font-size: 3rem;
 }
 
+.navbar {
+    width: 100%;
+    background-color: #253A52;
+    overflow: auto;
+  }
+  
+  .navbar a {
+    float: left;
+    padding: 12px;
+    color: #FFFFE3;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  .navbar a:hover {
+    background-color: #1b293a;
+  }
+
+  .navbar a.active:hover {
+    background-color: #047e52;
+  }
+  
+  .active {
+    background-color: #04AA6D;
+  }
+  
+  @media screen and (max-width: 1024px) {
+    .navbar a {
+      float: none;
+      display: block;
+    }
+  }
+
 .bio-para {
     font-size: 1.3rem;
 }
 
+.article-buffer {
+    padding-top: 3rem;
+}
+
 .profile-image {
-    width: 320px;
-    height: 320px;
+    width: 250px;
+    height: 250px;
     margin-inline-end: 4rem;
+    padding-top: 3rem;
 }
 
 .bio {
@@ -30,6 +68,7 @@ h2 {
         flex-direction: column;
     }
 }
+
 
 .btn {
     text-decoration: none;
@@ -43,8 +82,11 @@ h2 {
 }
 
 .article-image {
-    width: 512px;
-    height: 300px;
+    
+    max-width:500px;
+    max-height:300px;
+    width: auto;
+    height: auto;
 }
 
 article {
@@ -56,6 +98,26 @@ article {
         flex-direction: column;
     }
     .article-image {
-        width: 100%;
+        max-width:1024px;
+        max-height:1024px;
     }
+}
+
+.email-link {
+    color: #047e52;
+}
+
+.footer-line {
+    max-width: 1024px;
+}
+
+footer {
+    margin : auto;
+    max-width: 1024;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    background-color: #253A52;
+    color: #FFFFE3;
+    overflow: auto;
+    text-align: center;
 }
