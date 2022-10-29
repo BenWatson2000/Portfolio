@@ -93,6 +93,14 @@ h2 {
     height: auto;
 }
 
+.gallary-image {
+    
+    max-width:800px;
+    max-height:500px;
+    width: auto;
+    height: auto;
+}
+
 article {
     display: flex;
 }
