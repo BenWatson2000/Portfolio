@@ -4,7 +4,6 @@
 
 * Image Segmenting Tool from GAN project
 
-
 * Team Project (FDM)
 
 * BacePace
