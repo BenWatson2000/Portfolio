@@ -1,20 +1,6 @@
 # Portfolio Website
 
-## Articles to Add:
-
-* Image Segmenting Tool from GAN project
-
-* Team Project (FDM)
-
-* BacePace
-
-* Raspberry Pi LED Thing
-
-* A Level Computer Science Project
-
-* Wine Quality Project
-
-* Lottery Web App
+* Domain Name: benthompsonwatson.co.uk
 
 ## TODO:
 
