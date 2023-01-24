@@ -28,13 +28,14 @@ a.icon-link:hover {
 
 .navbar {
   width: 100%;
-  padding: 30px 50px;
+  padding: 10px 50px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   position: fixed;
   top: 0;
   left: 0;
+  background-color: white;
 }
 
 .nav-title-link {

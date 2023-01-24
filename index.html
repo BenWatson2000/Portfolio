@@ -21,6 +21,7 @@
 		<link rel="stylesheet" href="./css/layout.css">
     <link rel="stylesheet" href="./css/typography.css">
     <link rel="stylesheet" href="./css/utilities.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
 
 		<script defer src="./js/script.js"></script>
 	</head>
@@ -85,6 +86,10 @@
       -->
       <div id="about-section">
         <span class="subheader-text">About Me</span>
+        <div class="location">
+          <i class="fas fa-map-marker-alt"></i>
+          <p>Newcastle, UK</p>
+        </div>
         <div class="about-section-content">
           <div class="body-text">I've been programming and making projects since
             2017. I have experience in programming
@@ -96,6 +101,21 @@
           <!-- <div cass="body-text">Alongside programming and game development, I am an avid journalist and film critic, writing for multiple publications about all manner of things. Through this critical analysis of media, I've developed a creative flair with the work I do and try to use it wherever and whenever I can!</div> -->
         </div>
       </div>
+
+      <!-- <div id="about-section">
+        <span class="subheader-text">Technical Skills</span>
+
+        <div class="about-section-content">
+          <section id="skills">
+            <ul>
+              <li>JavaScript</li>
+              <li>Python</li>
+              <li>React</li>
+              <li>Node.js</li>
+              <li>MongoDB</li>
+            </ul>
+          </section>
+      </div> -->
 
       <!-- PROJECTS / MY WORK SECTION -->
       <div id="my-work-section">
@@ -126,7 +146,7 @@
                 - PROJECT_PAGE_NAME.html: the html filename for the project (must be in project-pages folder)
           -->
           <div class="project-card">
-            <img src="./assets/images/Goat Immitator.jpg" class="project-image">
+            <img src="./assets/images/ai-technology-microchip-background-digital-transformation-concept.jpg" class="project-image">
             <div class="project-card-text-container">
               <div class="subheader-text project-title">RestoreGAN</div>
               <div class="body-text project-card-text">Automated Image Restoration using Generative
@@ -140,7 +160,7 @@
           </div>
 
           <div class="project-card">
-            <img src="./assets/images/Fantasy World.jpg" class="project-image">
+            <img src="./assets/images/pexels-ann-h-6589270.jpg" class="project-image">
             <div class="project-card-text-container">
               <div class="subheader-text project-title">Image Segmenting Tool</div>
               <div class="body-text project-card-text">Developed to allow images of any resolution to be fed into any image processing neural network</div>
@@ -152,7 +172,7 @@
           </div>
 
           <div class="project-card">
-            <img src="./assets/images/Python Game.jpg" class="project-image">
+            <img src="./assets/images/pexels-pavel-danilyuk-8439085.jpg" class="project-image">
             <div class="project-card-text-container">
               <div class="subheader-text project-title">A.I. Wine Critic</div>
               <div class="body-text project-card-text">This study
@@ -166,7 +186,7 @@
           </div>
 
           <div class="project-card">
-            <img src="./assets/images/Reflection Dissertation.png" class="project-image">
+            <img src="./assets/images/66136.jpg" class="project-image">
             <div class="project-card-text-container">
               <div class="subheader-text project-title">MyCarreerPath</div>
               <div class="body-text project-card-text">Team Project on the Gamification of Graduate Scheme Programs for FDM</div>
@@ -178,7 +198,7 @@
           </div>
 
           <div class="project-card">
-            <img src="./assets/images/Planet Play.jfif" class="project-image">
+            <img src="./assets/images/Screenshot 2023-01-24 at 20.15.33.png" class="project-image">
             <div class="project-card-text-container">
               <div class="subheader-text project-title">Lottery Web App</div>
               <div class="body-text project-card-text">A web application that allows a user to create an account,
@@ -191,7 +211,7 @@
           </div>
 
           <div class="project-card">
-            <img src="./assets/images/island.jpg" class="project-image">
+            <img src="./assets/images/abstract-networking-concept-still-life-composition.jpg" class="project-image">
             <div class="project-card-text-container">
               <div class="subheader-text project-title">Dynamic Navigation System Simulation</div>
               <div class="body-text project-card-text">Made use of Unity's plethra of tools and some shader language code to create a 3D world to be explored</div>
@@ -201,21 +221,61 @@
               <image src="./assets/icons/arrow-right.svg" class="right-arrow-icon"/>
             </a>
           </div>
+        </div>
+      </div>
 
-          <div class="project-card">
-            <img src="./assets/images/doorbell.jfif" class="project-image">
-            <div class="project-card-text-container">
-              <div class="subheader-text project-title">Facial Recognition Doorbell</div>
-              <div class="body-text project-card-text">Lead a team project to create a Rasperry Pi based smart doorbell that used facial recognition and a camera to let you know who is at the door via an android app</div>
+      <!-- PROJECTS / MY WORK SECTION -->
+      <div id="my-work-section">
+        <!-- TODO - Change the subheader-text to whatever you want the Projects section header to say -->
+        <span class="subheader-text">In Progress Projects</span>
+
+        <div class="projects-container">
+          <!-- 
+            TODO
+
+            This is where the project cards live. Here's a base level project card for you to copy:
+            <div class="project-card">
+              <img src="./assets/images/IMAGE_NAME" class="project-image">
+              <div class="project-card-text-container">
+                <div class="subheader-text project-title">PROJECT_NAME</div>
+                <div class="body-text project-card-text">SMALL_PROJECT_DESCRIPTION</div>
+              </div>
+              <a class="button" href="./project-pages/PROJECT_PAGE_NAME.html">
+                <span class="button-text">Read More</span>
+                <image src="./assets/icons/arrow-right.svg" class="right-arrow-icon"/>
+              </a>
             </div>
-            <a class="button" href="./project-pages/doorbell.html">
+
+            - To add a project to the this area, copy the above, paste it below this comment, and change the following:
+                - IMAGE_NAME: the name of the image file in assets/images
+                - PROJECT_NAME: the name of the project (keep it short, it only shows 1 line)
+                - SMALL_PROJECT_DESCRIPTION: a quick project description (max 4 lines)
+                - PROJECT_PAGE_NAME.html: the html filename for the project (must be in project-pages folder)
+          -->
+          <div class="project-card">
+            <img src="./assets/images/6760069451658.jpg" class="project-image">
+            <div class="project-card-text-container">
+              <div class="subheader-text project-title">Spotifest</div>
+              <div class="body-text project-card-text">Use of the Spotify API to suggest festivals and generate festival tailored playlists for an authenticated user.</div>
+            </div>
+            <a class="button" href="./project-pages/goat-imitator.html">
               <span class="button-text">Read More</span>
               <image src="./assets/icons/arrow-right.svg" class="right-arrow-icon"/>
             </a>
           </div>
 
-        </div>
-      </div>
+          <div class="project-card">
+            <img src="./assets/images/high-angle-keyboard-with-credit-cards-hook-phishing.jpg" class="project-image">
+            <div class="project-card-text-container">
+              <div class="subheader-text project-title">Key Logger Awareness</div>
+              <div class="body-text project-card-text">Demonstrating the importance of internet security and how to prevent key loggers from being installed on your device.</div>
+            </div>
+            <a class="button" href="./project-pages/fantasy-world.html">
+              <span class="button-text">Read More</span>
+              <image src="./assets/icons/arrow-right.svg" class="right-arrow-icon"/>
+            </a>
+          </div>
+
     </div>
 
     <!-- FOOTER -->
