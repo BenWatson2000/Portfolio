@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="style.css" rel="stylesheet">
+        <title>Basic Web Page</title>
+    </head>
+    <body>
+
+        <div class="navbar">
+            <a class="active" href="index.html">Home</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="contact.html">Contact</a>
+        </div>
+        <hr>
+
+        <section class="bio">
+            <div>
+                <img class="profile-image" src="images/square_head_shot.png" />
+                <p>Ben Thompson-Watson (MCOMP)</p>
+                <p>Newcastle University</p>
+            </div>
+            <div>
+                <h2>Hello! My name is Ben. I'm a Computer Scientist
+                    with expertise in Data Science and Machine Learning.
+                </h2>
+                <p class="bio-para">I've been coding and making projects since
+                    2017. I have experience in programming
+                    (Python, Java, C, Haskell), and Web Development (HTML, CSS,
+                    JS). I enjoy traveling and taking pictures
+                    using my drone of different landcapes and architechures
+                    across the UK.
+                </p>
+                <a class="btn" href="https://www.google.com" target="blank">See
+                    my Work</a>
+            </div>
+        </section>
+        <br>
+        <hr>
+
+        <section class="work">
+            <h2>Recent Work</h2>
+            <article>
+                <div>
+                    <h3>Automated Image Restoration using Generative
+                        Adversarial Networks with Synthetic Data Training
+                        and Image Quality Preservation</h3>
+                        <strong>May 2022</strong>
+                    <p>Image restoration is an issue which aims to recover parts
+                        of an image that have degraded significantly making
+                        manual re-touching tools infeasible to use due to the
+                        volume and variation of the damage. Proposed is a new
+                        automated process of image restoration based on
+                        Generative Adversarial Networks which is transferable,
+                        efficient and minimises information loss.</p>
+                
+                    <ul>
+                        <li>
+                            Image Segmentation Framework.
+                        </li>
+                        <li>
+                            Creation of 7 Synthetic Deep Learning Datasets.
+                        </li>
+                        <li>
+                            Applying Datasets to train Generative Adversarial
+                            Network.
+                        </li>
+                        <li>
+                            Restoring Images present with Real (Non-Synthetic)
+                            Damage. </li>
+                    </ul>
+                    <a href="https://www.google.com" target="blank">GitHub Repo</a>
+                </div>
+                <img class="article-image"
+                    src="images/1_HByuNjKgdVf9LaV_g4fZzA.png" />
+
+            </article>
+            <p class="article-buffer"></p>
+                <article>
+                    <div>
+                        <h3>Image Segmenting Tool</h3>
+                        <strong>May 2022</strong>
+                        <p>A subtool built during the Automated Image Restoration project was this Image segmenting tool.
+                            <br><br>
+                            The tool allowed for images of any resolution to be fed into any image analysis neural network.
+                        </p> 
+                        
+    
+
+                        <ul>
+                            <li>
+                                Preservative Image Segmentation for any resolution size.
+                            </li>
+                            <li>
+                                Padding Techniques.
+                            </li>
+                           
+                        </ul>
+                        <a href="https://www.google.com" target="blank">GitHub
+                            Repo</a>
+                    </div>
+                    <img class="article-image" src="images/Capture.PNG" />
+                </article>
+                <p class="article-buffer"></p>
+                <article>
+                    <div>
+                        <h3>Developing an Artificially Intelligent Wine Critic</h3>
+                        <strong>May 2021</strong>
+                        <p>The determination of a wine’s quality has been ambiguous for quite some time. This study
+                            demonstrates a system built for predicting the quality of new uncritiqued wines with
+                            precision. The purpose of this research is to investigate which features of wine affect its
+                            quality for a winery in Portugal to help optimise production</p> 
+                        
+                        <ul>
+                            <li>
+                                Feature Selection.
+                            </li>
+                            <li>
+                                Logistic Regression.
+                            </li>
+                            <li>
+                                Random Forests.
+                            </li>
+                            <li>
+                                Classification vs Regression Problems
+                            </li>
+                           
+                        </ul>
+                        <a href="https://www.google.com" target="blank">GitHub
+                            Repo</a>
+                    </div>
+                    <img class="article-image" src="images/james-suckling.jpg" />
+                </article>
+                <p class="article-buffer"></p>
+                <article>
+                    <div>
+                        <h3>Team Project on the Gamification of Graduate Scheme Programs for FDM</h3>
+                        <strong>January 2021</strong>
+                        <p>Over 6 weeks, I lead a team of developers to build a web application that presents information for different Graduate Scheme Programs through a selection of engaging games. The app targeted 3 different career sectors: Software Testing, Technical Operations and Business Intelligence. Each game was tailored to the users chosen sector with specific questions and answers to ensure the correct group of people were targeted.
+                            
+                            <br><br>
+                            The client for this project was FDM Group, a recruitment and training company with services available to graduate students, ex-military or professionals who have had a break in their career.
+                            
+                            .</p>
+
+                        <ul>
+                            <li>
+                                Led a Team of Stage 2 Undergraduate Computer Scientists.
+                            </li>
+                            <li>
+                                Built a Full Stack Web Application using Django / Apache / MySQL and AWS.
+                            </li>
+                            <li>
+                                Tailored games for different carreer paths.
+                            </li>
+                            <li>
+                                Admin Functionality.
+                            </li>
+                        </ul>
+                        <a href="https://www.google.com" target="blank">GitHub
+                            Repo</a>
+                    </div>
+                    <img class="article-image" src="images/Picture1.png" />
+                </article>
+                <p class="article-buffer"></p>
+                <article>
+                    <div>
+                        <h3>Lottery Web App</h3>
+                        <strong>November 2020</strong>
+                        <p>Over four weeks, I developed a web application that allows a user to create an account,
+                            log in and enter custom or “lucky dip” lottery numbers and check if they are a winner. This is done
+                            through Java Servlets, JSP pages and a database backend all deployed on a Tomcat server.
+                            <br><br>
+                            Handling data about people or important entities must perform securely to protect its contents,
+                            otherwise, it opens the opportunity for malicious attacks. My application used many different security
+                            techniques such as encryption, hashing and SQL Injection/Path traversal prevention.
+                            </p> 
+                        
+                        <ul>
+                            <li>
+                                Docker.
+                            </li>
+                            <li>
+                                Java Serverlets and JSP files.
+                            </li>
+                            <li>
+                               Tomcat Server
+                            </li>
+                            <li>
+                                Security Paradigms
+                            </li>
+                           
+                        </ul>
+                        <a href="https://www.google.com" target="blank">GitHub
+                            Repo</a>
+                    </div>
+                    <img class="article-image" src="images/29540.png" />
+                </article>
+                <p class="article-buffer">
+                    <article>
+                        <div>
+                            <h3>A Dynamic Navigation System Simulation</h3>
+                            <strong>June 2019</strong>
+                            <p>
+                                Satnavs, as accurate as they are, are not always
+                                able to tell the user in
+                                real time about oncoming accidents, therefore say if
+                                there is a car crash ahead,
+                                a normal satnav would not be able to tell the
+                                driver. However, a self-driving
+                                car would be able make their own decision and
+                                re-direct if necessary, to get
+                                to their destination as quick as possible. This is
+                                usually done by tapping
+                                into news feeds, that indicate to them about traffic
+                                and incidents on the
+                                road and detecting minor changes in the traffic
+                                around the car.</p>
+                            
+                            <ul>
+                                <li>
+                                    Dynamic Re-routing at node points (junctions).
+                                </li>
+                                <li>
+                                    Traffic Simulation with cars taking random
+                                    routes mimicking congestion at given different
+                                    roads.
+                                </li>
+                                <li>
+                                    Can be applied to various road network
+                                    configurations.
+                                </li>
+                                <li>
+                                    Outlines the benefit of using a social network
+                                    between
+                                    cars to improve routing between two locations.
+                                </li>
+                            </ul>
+                            <a href="https://www.google.com" target="blank">GitHub
+                                Repo</a>
+                        </div>
+                        <img class="article-image" src="images/traffic.jpg" />
+                    </article>
+
+            </section>
+            
+
+            <hr>
+            <footer>
+                <h3>Lets Talk!</h3>
+                <hr class="footer-line">
+                <div>
+                    <p>Author: Ben Thompson-Watson<br>
+                        <a class="email-link"
+                            href="mailto:benthompsonwatson@hotmail.co.uk">benthompsonwatson@hotmail.co.uk</a></p>
+                </div>
+            </footer>
+
+
+            <script src="script.js"></script>
+        </body>
+    </html>

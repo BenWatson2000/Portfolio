@@ -1,233 +1,251 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link href="style.css" rel="stylesheet">
-        <title>Basic Web Page</title>
-    </head>
-    <body>
+	<head>
+		<meta charset="utf-8">
 
-        <div class="navbar">
-            <a class="active" href="index.html">Home</a>
-            <a href="gallery.html">Gallery</a>
-            <a href="contact.html">Contact</a>
+    <!-- 
+      TODO
+
+      Upload your Unemployable (or whatever photo you like) to the assets/images folder
+      and change the name of the image below to match the uploaded one
+
+      Change the title in the <title> tag to whatever you would like the title of your portfolio to be
+
+      This should be the same across all pages.
+     -->
+    <link rel="icon" href="./images/square_head_shot.png" />
+		<title>Ben Thompson-Watson</title>
+    <meta name="description" content="A portfolio by Ben Thompson-Watson.">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+		<link rel="stylesheet" href="./css/layout.css">
+    <link rel="stylesheet" href="./css/typography.css">
+    <link rel="stylesheet" href="./css/utilities.css">
+
+		<script defer src="./js/script.js"></script>
+	</head>
+	<body>
+    <!-- NAVBAR -->
+    <div class="navbar">
+      <a class="nav-title-link" href="./index.html">
+        <!-- TODO - Change the "Portfolio Title" to whatever you want displayed in the top left -->
+        <span class="nav-title">Ben Thompson-Watson's Portfolio</span>
+         <!-- TODO - Change the email after 'mailto:' to your email address for contact -->
+        <!-- <a class="button" href="./assets/CV.pdf" target="_blank">
+          <span class="button-text">My CV</span>
+        </a> -->
+        <a class="button" href="mailto:benthompsonwatson@hotmail.co.uk">
+          <span class="button-text">Contact Me</span>
+        </a>
+      </a>
+    </div>
+
+    <!-- MAIN PAGE CONTENT -->
+    <div id="main-content">
+
+      <!-- PORTFOLIO HEADER -->
+      <div id="portfolio-header">
+        <div id="portfolio-header-image-container">
+          <!-- 
+            TODO
+
+            - Change the img "src" attribute to point to the Unemployable image you uploaded (or whatever image).
+            - Change the number to point to your Unemployable & replace the OpenSea link with your own
+            - If you aren't using an Unemployable as your image, remove the entire "a" element
+          -->
+          <img src="./images/square_head_shot.png" class="portfolio-header-image">
         </div>
-        <hr>
 
-        <section class="bio">
-            <div>
-                <img class="profile-image" src="images/square_head_shot.png" />
-                <p>Ben Thompson-Watson (MCOMP)</p>
-                <p>Newcastle University</p>
+          <!-- 
+            TODO
+
+            - Change the main-title to whatver you want
+            - Change the body-text after that to a quick introduction to what you do
+            - Edit the button text if you feel like it. It will link to the projects section below.
+          -->
+        <div id="portfolio-header-text-container">
+            <div class="header-text">
+              <span class="main-title">Hey, I'm Ben!</span>
+              <div class="body-text">I'm a Computer Scientist
+                with expertise in Data Science and Machine Learning looking to break into the tech industry.</div>
             </div>
-            <div>
-                <h2>Hello! My name is Ben. I'm a Computer Scientist
-                    specialised in Data Science and Machine Learning.
-                </h2>
-                <p class="bio-para">I've been coding and making projects since
-                    2017. I have experience in programming,
-                    (Python, Java, C, Haskell) and Web Development (HTML, CSS,
-                    JS). I enjoy traveling and taking pictures
-                    using my drone of different landcapes and architechures
-                    across the UK.
-                </p>
-                <a class="btn" href="https://www.google.com" target="blank">See
-                    my Work</a>
+            <a class="button" id="my-work-link">
+              <span class="button-text">Check out my projects</span> 
+              <image src="./assets/icons/arrow-right.svg" class="right-arrow-icon"/>
+            </a>
+        </div>
+      </div>
+
+      <!-- ABOUT SECTION -->
+      <!-- 
+        TODO
+
+        - Change the subheader-text to whatever header you want
+        - Add paragraphs using the <div class="body-text"></div> elements in the "about-section-content"
+      -->
+      <div id="about-section">
+        <span class="subheader-text">About Me</span>
+        <div class="about-section-content">
+          <div class="body-text">I've been programming and making projects since
+            2017. I have experience in programming
+            (Python, Java, C, Haskell), and Web Development (HTML, CSS,
+            JS). I enjoy traveling and taking pictures
+            using my drone of different landcapes and architechures
+            across the UK.</div>
+          <!-- <div class="body-text">I am passionate not only about science and technology, but the arts as well with a deep love of games and films. In all the work I do I try to approach it from an original and unorthadox angle. It may not always work but I'm grateful for everything I am able to learn through the mistakes I make.</div> -->
+          <!-- <div cass="body-text">Alongside programming and game development, I am an avid journalist and film critic, writing for multiple publications about all manner of things. Through this critical analysis of media, I've developed a creative flair with the work I do and try to use it wherever and whenever I can!</div> -->
+        </div>
+      </div>
+
+      <!-- PROJECTS / MY WORK SECTION -->
+      <div id="my-work-section">
+        <!-- TODO - Change the subheader-text to whatever you want the Projects section header to say -->
+        <span class="subheader-text">My Work / My Projects</span>
+
+        <div class="projects-container">
+          <!-- 
+            TODO
+
+            This is where the project cards live. Here's a base level project card for you to copy:
+            <div class="project-card">
+              <img src="./assets/images/IMAGE_NAME" class="project-image">
+              <div class="project-card-text-container">
+                <div class="subheader-text project-title">PROJECT_NAME</div>
+                <div class="body-text project-card-text">SMALL_PROJECT_DESCRIPTION</div>
+              </div>
+              <a class="button" href="./project-pages/PROJECT_PAGE_NAME.html">
+                <span class="button-text">Read More</span>
+                <image src="./assets/icons/arrow-right.svg" class="right-arrow-icon"/>
+              </a>
             </div>
-        </section>
-        <br>
-        <hr>
 
-        <section class="work">
-            <h2>Recent Work</h2>
-            <article>
-                <div>
-                    <h3>Automated Image Restoration using Generative
-                        Adversarial Networks with Synthetic Data Training
-                        and Image Quality Preservation</h3>
-                        <strong>May 2022</strong>
-                    <p>Image restoration is an issue which aims to recover parts
-                        of an image that have degraded significantly making
-                        manual re-touching tools infeasible to use due to the
-                        volume and variation of the damage. Proposed is a new
-                        automated process of image restoration based on
-                        Generative Adversarial Networks which is transferable,
-                        efficient and minimises information loss.</p>
-                
-                    <ul>
-                        <li>
-                            Image Segmentation Framework.
-                        </li>
-                        <li>
-                            Creation of 7 Synthetic Deep Learning Datasets.
-                        </li>
-                        <li>
-                            Applying Datasets to train Generative Adversarial
-                            Network.
-                        </li>
-                        <li>
-                            Restoring Images present with Real (Non-Synthetic)
-                            Damage. </li>
-                    </ul>
-                    <a href="https://www.google.com" target="blank">GitHub Repo</a>
-                </div>
-                <img class="article-image"
-                    src="images/1_HByuNjKgdVf9LaV_g4fZzA.png" />
+            - To add a project to the this area, copy the above, paste it below this comment, and change the following:
+                - IMAGE_NAME: the name of the image file in assets/images
+                - PROJECT_NAME: the name of the project (keep it short, it only shows 1 line)
+                - SMALL_PROJECT_DESCRIPTION: a quick project description (max 4 lines)
+                - PROJECT_PAGE_NAME.html: the html filename for the project (must be in project-pages folder)
+          -->
+          <div class="project-card">
+            <img src="./assets/images/Goat Immitator.jpg" class="project-image">
+            <div class="project-card-text-container">
+              <div class="subheader-text project-title">RestoreGAN</div>
+              <div class="body-text project-card-text">Automated Image Restoration using Generative
+                Adversarial Networks with Synthetic Data Training
+                and Image Quality Preservation</div>
+            </div>
+            <a class="button" href="./project-pages/goat-imitator.html">
+              <span class="button-text">Read More</span>
+              <image src="./assets/icons/arrow-right.svg" class="right-arrow-icon"/>
+            </a>
+          </div>
 
-            </article>
-            <p class="article-buffer">
-                <article>
-                    <div>
-                        <h3>A Dynamic Navigation System Simulation</h3>
-                        <strong>June 2019</strong>
-                        <p>
-                            Satnavs, as accurate as they are, are not always
-                            able to tell the user in
-                            real time about oncoming accidents, therefore say if
-                            there is a car crash ahead,
-                            a normal satnav would not be able to tell the
-                            driver. However, a self-driving
-                            car would be able make their own decision and
-                            re-direct if necessary, to get
-                            to their destination as quick as possible. This is
-                            usually done by tapping
-                            into news feeds, that indicate to them about traffic
-                            and incidents on the
-                            road and detecting minor changes in the traffic
-                            around the car.</p>
-                        
-                        <ul>
-                            <li>
-                                Dynamic Re-routing at node points (junctions).
-                            </li>
-                            <li>
-                                Traffic Simulation with cars taking random
-                                routes mimicking congestion at given different
-                                roads.
-                            </li>
-                            <li>
-                                Can be applied to various road network
-                                configurations.
-                            </li>
-                            <li>
-                                Outlines the benefit of using a social network
-                                between
-                                cars to improve routing between two locations.
-                            </li>
-                        </ul>
-                        <a href="https://www.google.com" target="blank">GitHub
-                            Repo</a>
-                    </div>
-                    <img class="article-image" src="images/traffic.jpg" />
-                </article>
+          <div class="project-card">
+            <img src="./assets/images/Fantasy World.jpg" class="project-image">
+            <div class="project-card-text-container">
+              <div class="subheader-text project-title">Image Segmenting Tool</div>
+              <div class="body-text project-card-text">Developed to allow images of any resolution to be fed into any image processing neural network</div>
+            </div>
+            <a class="button" href="./project-pages/fantasy-world.html">
+              <span class="button-text">Read More</span>
+              <image src="./assets/icons/arrow-right.svg" class="right-arrow-icon"/>
+            </a>
+          </div>
 
-                <p class="article-buffer"></p>
-                <article>
-                    <div>
-                        <h3>Team Project on the Gamification of Graduate Scheme Programs for FDM</h3>
-                        <strong>January 2021</strong>
-                        <p>Over 6 weeks, I lead a team of developers to build a web application that presents information for different Graduate Scheme Programs through a selection of engaging games. The app targeted 3 different career sectors: Software Testing, Technical Operations and Business Intelligence. Each game was tailored to the users chosen sector with specific questions and answers to ensure the correct group of people were targeted.
-                            
-                            <br><br>
-                            The client for this project was FDM Group, a recruitment and training company with services available to graduate students, ex-military or professionals who have had a break in their career.
-                            
-                            .</p>
+          <div class="project-card">
+            <img src="./assets/images/Python Game.jpg" class="project-image">
+            <div class="project-card-text-container">
+              <div class="subheader-text project-title">A.I. Wine Critic</div>
+              <div class="body-text project-card-text">This study
+                demonstrates a system built for predicting the quality of new uncritiqued wines with
+                precision.</div>
+            </div>
+            <a class="button" href="./project-pages/python-game.html">
+              <span class="button-text">Read More</span>
+              <image src="./assets/icons/arrow-right.svg" class="right-arrow-icon"/>
+            </a>
+          </div>
 
-                        <ul>
-                            <li>
-                                Lead a Team of Stage 2 USndergraduate Computer Scientists.
-                            </li>
-                            <li>
-                                Built a Full Stack Web Application using Django / Apache / MySQL and AWS.
-                            </li>
-                            <li>
-                                Tailored games for different carreer paths.
-                            </li>
-                            <li>
-                                Admin Functionality.
-                            </li>
-                        </ul>
-                        <a href="https://www.google.com" target="blank">GitHub
-                            Repo</a>
-                    </div>
-                    <img class="article-image" src="images/Picture1.png" />
-                </article>
-                <p class="article-buffer"></p>
-                <article>
-                    <div>
-                        <h3>Image Segmenting Tool</h3>
-                        <strong>May 2022</strong>
-                        <p>A subtool built during the Automated Image Restoration project was this Image segmenting tool.
-                            <br><br>
-                            The tool allowed for images of any resolution to be fed into any image analysis neural network.
-                        </p> 
-                        
-    
+          <div class="project-card">
+            <img src="./assets/images/Reflection Dissertation.png" class="project-image">
+            <div class="project-card-text-container">
+              <div class="subheader-text project-title">MyCarreerPath</div>
+              <div class="body-text project-card-text">Team Project on the Gamification of Graduate Scheme Programs for FDM</div>
+            </div>
+            <a class="button" href="./project-pages/diss-3.html">
+              <span class="button-text">Read More</span>
+              <image src="./assets/icons/arrow-right.svg" class="right-arrow-icon"/>
+            </a>
+          </div>
 
-                        <ul>
-                            <li>
-                                Preservative Image Segmentation for any resolution size.
-                            </li>
-                            <li>
-                                Padding Techniques.
-                            </li>
-                           
-                        </ul>
-                        <a href="https://www.google.com" target="blank">GitHub
-                            Repo</a>
-                    </div>
-                    <img class="article-image" src="images/Capture.PNG" />
-                </article>
-                <p class="article-buffer"></p>
-                <article>
-                    <div>
-                        <h3>Developing an Artificially Intelligent Wine Critic</h3>
-                        <strong>May 2022</strong>
-                        <p>The determination of a wine’s quality has been ambiguous for quite some time. This study
-                            demonstrates a system built for predicting the quality of new uncritiqued wines with
-                            precision. The purpose of this research is to investigate which features of wine affect its
-                            quality for a winery in Portugal to help optimise production</p> 
-                        
-    
+          <div class="project-card">
+            <img src="./assets/images/Planet Play.jfif" class="project-image">
+            <div class="project-card-text-container">
+              <div class="subheader-text project-title">Lottery Web App</div>
+              <div class="body-text project-card-text">A web application that allows a user to create an account,
+                log in and check lottery tickets for winning numbers.</div>
+            </div>
+            <a class="button" href="./project-pages/planet-play.html">
+              <span class="button-text">Read More</span>
+              <image src="./assets/icons/arrow-right.svg" class="right-arrow-icon"/>
+            </a>
+          </div>
 
-                        <ul>
-                            <li>
-                                Feature Selection.
-                            </li>
-                            <li>
-                                Logistic Regression.
-                            </li>
-                            <li>
-                                Random Forests.
-                            </li>
-                            <li>
-                                Classification vs Regression Problems
-                            </li>
-                           
-                        </ul>
-                        <a href="https://www.google.com" target="blank">GitHub
-                            Repo</a>
-                    </div>
-                    <img class="article-image" src="images/james-suckling.jpg" />
-                </article>
+          <div class="project-card">
+            <img src="./assets/images/island.jpg" class="project-image">
+            <div class="project-card-text-container">
+              <div class="subheader-text project-title">Dynamic Navigation System Simulation</div>
+              <div class="body-text project-card-text">Made use of Unity's plethra of tools and some shader language code to create a 3D world to be explored</div>
+            </div>
+            <a class="button" href="./project-pages/the-island.html">
+              <span class="button-text">Read More</span>
+              <image src="./assets/icons/arrow-right.svg" class="right-arrow-icon"/>
+            </a>
+          </div>
 
-            </section>
-            
+          <div class="project-card">
+            <img src="./assets/images/doorbell.jfif" class="project-image">
+            <div class="project-card-text-container">
+              <div class="subheader-text project-title">Facial Recognition Doorbell</div>
+              <div class="body-text project-card-text">Lead a team project to create a Rasperry Pi based smart doorbell that used facial recognition and a camera to let you know who is at the door via an android app</div>
+            </div>
+            <a class="button" href="./project-pages/doorbell.html">
+              <span class="button-text">Read More</span>
+              <image src="./assets/icons/arrow-right.svg" class="right-arrow-icon"/>
+            </a>
+          </div>
 
-            <hr>
-            <footer>
-                <h3>Lets Talk!</h3>
-                <hr class="footer-line">
-                <div>
-                    <p>Author: Ben Thompson-Watson<br>
-                        <a class="email-link"
-                            href="mailto:benthompsonwatson@hotmail.co.uk">benthompsonwatson@hotmail.co.uk</a></p>
-                </div>
-            </footer>
+        </div>
+      </div>
+    </div>
 
+    <!-- FOOTER -->
+    <div id="footer">
+      
+      <!-- 
+        TODO - Change href to your Twitter account (can also delete entire "a" element if no Twitter) 
+      
+        This should be the same across all pages.
+      -->
+      <a class="icon-link" target="_blank" href="https://twitter.com/George__Bell">
+        <image src="./assets/icons/twitter.svg" class="footer-icon"/>
+      </a>
+      <!-- 
+        TODO - Change the email after "mailto" to your contact email 
+      
+        This should be the same across all pages.
+      -->
+      <a class="icon-link" href="mailto:georgebell.com@gmail.com">
+        <image src="./assets/icons/mail.svg" class="footer-icon"/>
+      </a>
 
-            <script src="script.js"></script>
-        </body>
-    </html>
+      <a class="icon-link" href="https://github.com/georgebellbell">
+        <image src="./assets/icons/github.svg" class="footer-icon"/>
+      </a>
+
+      <a class="icon-link" href="https://www.linkedin.com/in/george-bell-uk/">
+        <image src="./assets/icons/linkedin.svg" class="footer-icon"/>
+      </a>
+    </div>
+
+	</body>
+</html>

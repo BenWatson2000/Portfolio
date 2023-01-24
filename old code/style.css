@@ -1,0 +1,142 @@
+body {
+    background: #ffffff;
+    color: #253A52;
+    padding: 25px;
+    font-family: sans-serif;
+    max-width: 1024px;
+    margin: 0 auto;
+    overflow-y: scroll;
+    min-height: 92vh;
+    /* display:flex; */
+    /* flex-direction:column; */
+}
+
+h2 {
+    font-size: 3rem;
+}
+
+.navbar {
+    width: 100%;
+    background-color: #253A52;
+    overflow: auto;
+  }
+  
+  .navbar a {
+    float: left;
+    padding: 12px;
+    color: #FFFFE3;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  .navbar a:hover {
+    background-color: #1b293a;
+  }
+
+  .navbar a.active:hover {
+    background-color: #047e52;
+  }
+  
+  .active {
+    background-color: #04AA6D;
+  }
+  
+  @media screen and (max-width: 1024px) {
+    .navbar a {
+      float: none;
+      display: block;
+    }
+  }
+
+.bio-para {
+    font-size: 1.3rem;
+}
+
+.article-buffer {
+    padding-top: 3rem;
+}
+
+.profile-image {
+    width: 250px;
+    height: 250px;
+    margin-inline-end: 4rem;
+    padding-top: 3rem;
+}
+
+.bio {
+    display: flex;
+}
+
+@media (max-width: 1024px) {
+    .bio {
+        flex-direction: column;
+    }
+}
+
+
+.btn {
+    text-decoration: none;
+    color: #FFFFE3;
+    background-color: #1348DA;
+    padding: 0 1rem;
+    height: 2.5rem;
+    display: inline-flex;
+    align-items: center;
+    border-radius: 1.25rem;
+}
+
+.article-image {
+    
+    max-width:500px;
+    max-height:300px;
+    width: auto;
+    height: auto;
+}
+
+.gallary-image {
+    
+    max-width:800px;
+    max-height:500px;
+    width: auto;
+    height: auto;
+}
+
+article {
+    display: flex;
+}
+
+@media (max-width: 1024px) {
+    article {
+        flex-direction: column;
+    }
+    .article-image {
+        max-width:1024px;
+        max-height:1024px;
+    }
+}
+
+.email-link {
+    color: #ffbeaa;
+}
+
+.link-blue {
+    color: #1348DA;
+}
+
+.footer-line {
+    max-width: 1024px;
+}
+
+footer {
+    margin-top : auto;
+    max-width: 1024px;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    background-color: #253A52;
+    color: #ffffff;
+    overflow: auto;
+    text-align: center;
+    bottom: 0;
+    position: relative ;
+
+}
