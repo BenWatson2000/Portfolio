@@ -48,11 +48,17 @@ body {
   margin: 125px 425px;
   display: flex;
   flex-direction: column;
-  gap: 96px;
+  gap: 10px;
 }
 
 
+#description-header-image-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  flex-basis: 30%;
 
+}
 
 /* Portfolio Header */
 
@@ -90,15 +96,27 @@ body {
   display: flex;
   flex-direction: column;
   gap: 16px;
+  padding-top: 50px;
 }
 
 .about-section-content {
   display: flex;
   flex-direction: column;
   gap: 34px;
+  padding-top: 10px;
 }
 
+#description-section {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
 
+.description-section-content {
+  display: flex;
+  flex-direction: column;
+  gap: 34px;
+}
 
 
 /* Project Section */
