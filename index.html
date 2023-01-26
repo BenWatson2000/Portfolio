@@ -3,16 +3,6 @@
 	<head>
 		<meta charset="utf-8">
 
-    <!-- 
-      TODO
-
-      Upload your Unemployable (or whatever photo you like) to the assets/images folder
-      and change the name of the image below to match the uploaded one
-
-      Change the title in the <title> tag to whatever you would like the title of your portfolio to be
-
-      This should be the same across all pages.
-     -->
     <link rel="icon" href="./images/square_head_shot.png" />
 		<title>Ben Thompson-Watson</title>
     <meta name="description" content="A portfolio by Ben Thompson-Watson.">
@@ -31,10 +21,7 @@
       <a class="nav-title-link" href="./index.html">
         <!-- TODO - Change the "Portfolio Title" to whatever you want displayed in the top left -->
         <span class="nav-title">Ben Thompson-Watson's Portfolio</span>
-         <!-- TODO - Change the email after 'mailto:' to your email address for contact -->
-        <!-- <a class="button" href="./assets/CV.pdf" target="_blank">
-          <span class="button-text">My CV</span>
-        </a> -->
+     
         <a class="button" href="mailto:benthompsonwatson@hotmail.co.uk">
           <span class="button-text">Contact Me</span>
         </a>
@@ -47,23 +34,10 @@
       <!-- PORTFOLIO HEADER -->
       <div id="portfolio-header">
         <div id="portfolio-header-image-container">
-          <!-- 
-            TODO
 
-            - Change the img "src" attribute to point to the Unemployable image you uploaded (or whatever image).
-            - Change the number to point to your Unemployable & replace the OpenSea link with your own
-            - If you aren't using an Unemployable as your image, remove the entire "a" element
-          -->
           <img src="./images/square_head_shot.png" class="portfolio-header-image">
         </div>
 
-          <!-- 
-            TODO
-
-            - Change the main-title to whatver you want
-            - Change the body-text after that to a quick introduction to what you do
-            - Edit the button text if you feel like it. It will link to the projects section below.
-          -->
         <div id="portfolio-header-text-container">
             <div class="header-text">
               <span class="main-title">Hey, I'm Ben!</span>
@@ -77,13 +51,7 @@
         </div>
       </div>
 
-      <!-- ABOUT SECTION -->
-      <!-- 
-        TODO
 
-        - Change the subheader-text to whatever header you want
-        - Add paragraphs using the <div class="body-text"></div> elements in the "about-section-content"
-      -->
       <div id="about-section">
         <span class="subheader-text">About Me</span>
         <div class="location">
@@ -99,20 +67,7 @@
         </div>
       </div>
 
-      <!-- <div id="about-section">
-        <span class="subheader-text">Technical Skills</span>
 
-        <div class="about-section-content">
-          <section id="skills">
-            <ul>
-              <li>JavaScript</li>
-              <li>Python</li>
-              <li>React</li>
-              <li>Node.js</li>
-              <li>MongoDB</li>
-            </ul>
-          </section>
-      </div> -->
 
       <!-- PROJECTS / MY WORK SECTION -->
       <div id="my-work-section">
@@ -120,36 +75,15 @@
         <span class="subheader-text">My Work / My Projects</span>
 
         <div class="projects-container">
-          <!-- 
-            TODO
 
-            This is where the project cards live. Here's a base level project card for you to copy:
-            <div class="project-card">
-              <img src="./assets/images/IMAGE_NAME" class="project-image">
-              <div class="project-card-text-container">
-                <div class="subheader-text project-title">PROJECT_NAME</div>
-                <div class="body-text project-card-text">SMALL_PROJECT_DESCRIPTION</div>
-              </div>
-              <a class="button" href="./project-pages/PROJECT_PAGE_NAME.html">
-                <span class="button-text">Read More</span>
-                <image src="./assets/icons/arrow-right.svg" class="right-arrow-icon"/>
-              </a>
-            </div>
-
-            - To add a project to the this area, copy the above, paste it below this comment, and change the following:
-                - IMAGE_NAME: the name of the image file in assets/images
-                - PROJECT_NAME: the name of the project (keep it short, it only shows 1 line)
-                - SMALL_PROJECT_DESCRIPTION: a quick project description (max 4 lines)
-                - PROJECT_PAGE_NAME.html: the html filename for the project (must be in project-pages folder)
-          -->
           <div class="project-card">
             <img src="./assets/images/ai-technology-microchip-background-digital-transformation-concept.jpg" class="project-image">
             <div class="project-card-text-container">
               <div class="subheader-text project-title">RestoreGAN</div>
               <div class="date-text project-date">May 2022</div>
-              <div class="body-text project-card-text">Automated Image Restoration using Generative
-                Adversarial Networks with Synthetic Data Training
-                and Image Quality Preservation</div>
+              <div class="body-text project-card-text">Automated image restoration using generative
+                adversarial networks with synthetic data training
+                and image quality preservation.</div>
             </div>
             <a class="button" href="./project-pages/restoreGAN.html">
               <span class="button-text">Read More</span>
@@ -157,29 +91,16 @@
             </a>
           </div>
 
-          <div class="project-card">
-            <img src="./assets/images/pexels-ann-h-6589270.jpg" class="project-image">
-            <div class="project-card-text-container">
-              <div class="subheader-text project-title">Image Segmenting Tool</div>
-              <div class="date-text project-date">May 2022</div>
-              <div class="body-text project-card-text">Developed to allow images of any resolution to be fed into any image processing neural network</div>
-            </div>
-            <a class="button" href="./project-pages/fantasy-world.html">
-              <span class="button-text">Read More</span>
-              <image src="./assets/icons/arrow-right.svg" class="right-arrow-icon"/>
-            </a>
-          </div>
 
           <div class="project-card">
             <img src="./assets/images/pexels-pavel-danilyuk-8439085.jpg" class="project-image">
             <div class="project-card-text-container">
               <div class="subheader-text project-title">A.I. Wine Critic</div>
               <div class="date-text project-date">May 2021</div>
-              <div class="body-text project-card-text">This study
-                demonstrates a system built for predicting the quality of new uncritiqued wines with
-                precision.</div>
+              <div class="body-text project-card-text">A study that
+                demonstrates a system built for predicting the quality of new uncritiqued wines using various Machine Learning models.</div>
             </div>
-            <a class="button" href="./project-pages/python-game.html">
+            <a class="button" href="./project-pages/AIWine.html">
               <span class="button-text">Read More</span>
               <image src="./assets/icons/arrow-right.svg" class="right-arrow-icon"/>
             </a>
@@ -190,9 +111,9 @@
             <div class="project-card-text-container">
               <div class="subheader-text project-title">MyCareerPath</div>
               <div class="date-text project-date">January 2021</div>
-              <div class="body-text project-card-text">Team Project on the Gamification of Graduate Scheme Programs for FDM</div>
+              <div class="body-text project-card-text">Team Project on the Gamification of Graduate Scheme Programs for a client called FDM. Produced was a full stack web application.</div>
             </div>
-            <a class="button" href="./project-pages/diss-3.html">
+            <a class="button" href="./project-pages/MyCareer.html">
               <span class="button-text">Read More</span>
               <image src="./assets/icons/arrow-right.svg" class="right-arrow-icon"/>
             </a>
@@ -206,7 +127,7 @@
               <div class="body-text project-card-text">A web application that allows a user to create an account,
                 log in and check lottery tickets for winning numbers.</div>
             </div>
-            <a class="button" href="./project-pages/planet-play.html">
+            <a class="button" href="./project-pages/Lottery.html">
               <span class="button-text">Read More</span>
               <image src="./assets/icons/arrow-right.svg" class="right-arrow-icon"/>
             </a>
@@ -217,9 +138,9 @@
             <div class="project-card-text-container">
               <div class="subheader-text project-title">Dynamic Navigation System Simulation</div>
               <div class="date-text project-date">June 2019</div>
-              <div class="body-text project-card-text">Made use of Unity's plethra of tools and some shader language code to create a 3D world to be explored</div>
+              <div class="body-text project-card-text">A simulation of a dynamic satnav system on an active road network suceptible to traffic congestion.</div>
             </div>
-            <a class="button" href="./project-pages/the-island.html">
+            <a class="button" href="./project-pages/SatNav.html">
               <span class="button-text">Read More</span>
               <image src="./assets/icons/arrow-right.svg" class="right-arrow-icon"/>
             </a>
@@ -233,28 +154,7 @@
         <span class="subheader-text">In Progress Projects</span>
 
         <div class="projects-container">
-          <!-- 
-            TODO
 
-            This is where the project cards live. Here's a base level project card for you to copy:
-            <div class="project-card">
-              <img src="./assets/images/IMAGE_NAME" class="project-image">
-              <div class="project-card-text-container">
-                <div class="subheader-text project-title">PROJECT_NAME</div>
-                <div class="body-text project-card-text">SMALL_PROJECT_DESCRIPTION</div>
-              </div>
-              <a class="button" href="./project-pages/PROJECT_PAGE_NAME.html">
-                <span class="button-text">Read More</span>
-                <image src="./assets/icons/arrow-right.svg" class="right-arrow-icon"/>
-              </a>
-            </div>
-
-            - To add a project to the this area, copy the above, paste it below this comment, and change the following:
-                - IMAGE_NAME: the name of the image file in assets/images
-                - PROJECT_NAME: the name of the project (keep it short, it only shows 1 line)
-                - SMALL_PROJECT_DESCRIPTION: a quick project description (max 4 lines)
-                - PROJECT_PAGE_NAME.html: the html filename for the project (must be in project-pages folder)
-          -->
           <div class="project-card">
             <img src="./assets/images/6760069451658.jpg" class="project-image">
             <div class="project-card-text-container">
@@ -262,10 +162,6 @@
               <div class="date-text project-date">2023 - Present</div>
               <div class="body-text project-card-text">Use of the Spotify API to suggest festivals and generate festival tailored playlists for an authenticated user.</div>
             </div>
-            <a class="button" href="./project-pages/goat-imitator.html">
-              <span class="button-text">Read More</span>
-              <image src="./assets/icons/arrow-right.svg" class="right-arrow-icon"/>
-            </a>
           </div>
 
           <div class="project-card">
@@ -275,30 +171,12 @@
               <div class="date-text project-date">2023 - Present</div>
               <div class="body-text project-card-text">Demonstrating the importance of internet security and how to prevent key loggers from being installed on your device.</div>
             </div>
-            <a class="button" href="./project-pages/fantasy-world.html">
-              <span class="button-text">Read More</span>
-              <image src="./assets/icons/arrow-right.svg" class="right-arrow-icon"/>
-            </a>
           </div>
 
     </div>
 
     <!-- FOOTER -->
     <div id="footer">
-      
-      <!-- 
-        TODO - Change href to your Twitter account (can also delete entire "a" element if no Twitter) 
-      
-        This should be the same across all pages.
-      -->
-      <!-- <a class="icon-link" target="_blank" href="https://twitter.com/George__Bell">
-        <image src="./assets/icons/twitter.svg" class="footer-icon"/>
-      </a> -->
-      <!-- 
-        TODO - Change the email after "mailto" to your contact email 
-      
-        This should be the same across all pages.
-      -->
       <a class="icon-link" href="mailto:benthompsonwatson@hotmail.co.uk">
         <image src="./assets/icons/mail.svg" class="footer-icon"/>
       </a>
@@ -312,7 +190,7 @@
       </a>
     </div>
 
-    <p class="footer-text">Ben Thompson-Watson 2023</p>
+    <p class="footer-text">Ben Thompson-Watson | 2023</p>
 
 
 	</body>

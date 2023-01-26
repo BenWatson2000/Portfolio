@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+
+    <!-- 
+      TODO
+
+      Upload your Unemployable (or whatever photo you like) to the assets/images folder
+      and change the name of the image below to match the uploaded one
+
+      Change the title in the <title> tag to whatever you would like the title of your portfolio to be
+
+      This should be the same across all pages.
+     -->
+    <link rel="icon" href="../images/square_head_shot.png" />
+		<title>Ben Thompson-Watson</title>
+    <meta name="description" content="A portfolio by Ben Thompson-Watson.">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+		<link rel="stylesheet" href="../css/layout.css">
+    <link rel="stylesheet" href="../css/typography.css">
+    <link rel="stylesheet" href="../css/utilities.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+
+		<script defer src="../js/script.js"></script>
+	</head>
+	<body>
+    <!-- NAVBAR -->
+    <div class="navbar">
+      <a class="nav-title-link" href="../index.html">
+        <!-- TODO - Change the "Portfolio Title" to whatever you want displayed in the top left -->
+        <span class="nav-title">Ben Thompson-Watson's Portfolio</span>
+         <!-- TODO - Change the email after 'mailto:' to your email address for contact -->
+        <!-- <a class="button" href="./assets/CV.pdf" target="_blank">
+          <span class="button-text">My CV</span>
+        </a> -->
+        <a class="button" href="mailto:benthompsonwatson@hotmail.co.uk">
+          <span class="button-text">Contact Me</span>
+        </a>
+      </a>
+    </div>
+
+    <!-- MAIN PAGE CONTENT -->
+    <div id="main-content">
+
+      <!-- PORTFOLIO HEADER -->
+      <div id="portfolio-header">
+
+          <!-- 
+            TODO
+
+            - Change the main-title to whatver you want
+            - Change the body-text after that to a quick introduction to what you do
+            - Edit the button text if you feel like it. It will link to the projects section below.
+          -->
+        <div id="description-header-text-container">
+            <div class="header-text">
+              <span class="main-title">Lottery Web App</span>
+              <div class="date-text project-date">November 2020</div>
+            </div>
+        </div>
+      </div>
+
+      <!-- ABOUT SECTION -->
+      <!-- 
+        TODO
+
+        - Change the subheader-text to whatever header you want
+        - Add paragraphs using the <div class="body-text"></div> elements in the "about-section-content"
+      -->
+      <div id="description-section">
+        <span class="subheader-text">Project Description</span>
+
+        <div class="about-section-content">
+          <div class="body-text">Over the past four weeks, I have developed a web application that allows a user to create an account,
+            log in and enter custom or “lucky dip” lottery numbers and check if they are a winner. This is done
+            through Java Servlets, JSP pages and a database backend all deployed on a Tomcat server.</div>
+          <div class="body-text">Handling data about people or important entities must perform securely to protect its contents,
+            otherwise, it opens the opportunity for malicious attacks. My application used many different security
+            techniques such as encryption, hashing and SQL Injection/Path traversal prevention.</div>
+          <div class="body-text">Before this project, I had close to no experience in HTML and JavaScript (JS). Through the project
+            requirements, I learned how to write many different scripts such as input validation in JS and
+            understood how similar the language is to Java which I have a lot of experience in already. I found it
+            difficult understanding how sessions work between java servlets and 'jsp' pages however by the fourth
+            week and some implementation of session management, I gained an understanding of how they
+            operated.</div>
+          <div class="body-text">I enjoyed learning how to encrypt and decrypt files as it is something I can transfer into my
+            programming practices to create a reliable system with great security protocols.</div>
+          <div class="body-text"></div>
+          <div class="body-text"></div>
+        </div>
+
+    <!-- FOOTER -->
+    <div id="footer">
+      
+      <!-- 
+        TODO - Change href to your Twitter account (can also delete entire "a" element if no Twitter) 
+      
+        This should be the same across all pages.
+      -->
+      <!-- <a class="icon-link" target="_blank" href="https://twitter.com/George__Bell">
+        <image src="./assets/icons/twitter.svg" class="footer-icon"/>
+      </a> -->
+      <!-- 
+        TODO - Change the email after "mailto" to your contact email 
+      
+        This should be the same across all pages.
+      -->
+      <a class="icon-link" href="mailto:benthompsonwatson@hotmail.co.uk">
+        <image src="../assets/icons/mail.svg" class="footer-icon"/>
+      </a>
+
+      <a class="icon-link" target="_blank" href="https://github.com/benwatson2000">
+        <image src="../assets/icons/github.svg" class="footer-icon"/>
+      </a>
+
+      <a class="icon-link" target="_blank" href="https://www.linkedin.com/in/ben-thompson-watson/">
+        <image src="../assets/icons/linkedin.svg" class="footer-icon"/>
+      </a>
+    </div>
+
+    <p class="footer-text">Ben Thompson-Watson | 2023</p>
+
+
+	</body>
+</html>

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+
+    <!-- 
+      TODO
+
+      Upload your Unemployable (or whatever photo you like) to the assets/images folder
+      and change the name of the image below to match the uploaded one
+
+      Change the title in the <title> tag to whatever you would like the title of your portfolio to be
+
+      This should be the same across all pages.
+     -->
+    <link rel="icon" href="../images/square_head_shot.png" />
+		<title>Ben Thompson-Watson</title>
+    <meta name="description" content="A portfolio by Ben Thompson-Watson.">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+		<link rel="stylesheet" href="../css/layout.css">
+    <link rel="stylesheet" href="../css/typography.css">
+    <link rel="stylesheet" href="../css/utilities.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+
+		<script defer src="../js/script.js"></script>
+	</head>
+	<body>
+    <!-- NAVBAR -->
+    <div class="navbar">
+      <a class="nav-title-link" href="../index.html">
+        <!-- TODO - Change the "Portfolio Title" to whatever you want displayed in the top left -->
+        <span class="nav-title">Ben Thompson-Watson's Portfolio</span>
+         <!-- TODO - Change the email after 'mailto:' to your email address for contact -->
+        <!-- <a class="button" href="./assets/CV.pdf" target="_blank">
+          <span class="button-text">My CV</span>
+        </a> -->
+        <a class="button" href="mailto:benthompsonwatson@hotmail.co.uk">
+          <span class="button-text">Contact Me</span>
+        </a>
+      </a>
+    </div>
+
+    <!-- MAIN PAGE CONTENT -->
+    <div id="main-content">
+
+      <!-- PORTFOLIO HEADER -->
+      <div id="portfolio-header">
+
+          <!-- 
+            TODO
+
+            - Change the main-title to whatver you want
+            - Change the body-text after that to a quick introduction to what you do
+            - Edit the button text if you feel like it. It will link to the projects section below.
+          -->
+        <div id="description-header-text-container">
+            <div class="header-text">
+              <span class="main-title">A.I Wine Critic</span>
+              <div class="date-text project-date">May 2021</div>
+            </div>
+        </div>
+      </div>
+
+      <!-- ABOUT SECTION -->
+      <!-- 
+        TODO
+
+        - Change the subheader-text to whatever header you want
+        - Add paragraphs using the <div class="body-text"></div> elements in the "about-section-content"
+      -->
+      <div id="description-section">
+        <span class="subheader-text">Project Description</span>
+
+        <div class="about-section-content">
+          <div class="body-text">The determination of a wine’s quality has been ambiguous for quite some time. This study
+            demonstrates a system built for predicting the quality of new uncritiqued wines with
+            precision.</div>
+          <div class="body-text">The purpose of this research is to investigate which features of wine affect its
+            quality for a winery in Portugal to help optimise production. Using feature importance
+            ranking, a subset of features was constructed for a wine dataset and was applied to the
+            training of a Random Forests machine learning model.</div>
+            <div class="body-text">The amount of alcohol and total
+                sulphur dioxide was found to be the most important features facilitating to an 87% prediction
+                accuracy from the model. This project definitively details the effects of these two important
+                features and their relation to wine quality.</div>
+            <div class="body-text">The quality proposed by the model was however
+                generalised to low/high classification, further research should go into a less generalised
+                predictive model.</div>
+          </div>
+      </div>
+
+
+    <!-- FOOTER -->
+    <div id="footer">
+      
+      <!-- 
+        TODO - Change href to your Twitter account (can also delete entire "a" element if no Twitter) 
+      
+        This should be the same across all pages.
+      -->
+      <!-- <a class="icon-link" target="_blank" href="https://twitter.com/George__Bell">
+        <image src="./assets/icons/twitter.svg" class="footer-icon"/>
+      </a> -->
+      <!-- 
+        TODO - Change the email after "mailto" to your contact email 
+      
+        This should be the same across all pages.
+      -->
+      <a class="icon-link" href="mailto:benthompsonwatson@hotmail.co.uk">
+        <image src="../assets/icons/mail.svg" class="footer-icon"/>
+      </a>
+
+      <a class="icon-link" target="_blank" href="https://github.com/benwatson2000">
+        <image src="../assets/icons/github.svg" class="footer-icon"/>
+      </a>
+
+      <a class="icon-link" target="_blank" href="https://www.linkedin.com/in/ben-thompson-watson/">
+        <image src="../assets/icons/linkedin.svg" class="footer-icon"/>
+      </a>
+    </div>
+
+    <p class="footer-text">Ben Thompson-Watson | 2023</p>
+
+
+	</body>
+</html>
