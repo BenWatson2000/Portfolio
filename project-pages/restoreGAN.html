@@ -35,6 +35,11 @@
         <!-- <a class="button" href="./assets/CV.pdf" target="_blank">
           <span class="button-text">My CV</span>
         </a> -->
+
+        <a class="button" href="../index.html">
+          <image src="../assets/icons/arrow-right.svg" class="left-arrow-icon"/>
+          <span class="button-text">Go Back</span>
+        </a>
         <a class="button" href="mailto:benthompsonwatson@hotmail.co.uk">
           <span class="button-text">Contact Me</span>
         </a>
@@ -45,7 +50,7 @@
     <div id="main-content">
 
       <!-- PORTFOLIO HEADER -->
-      <div id="portfolio-header">
+      <div id="project-header">
 
           <!-- 
             TODO
@@ -69,10 +74,10 @@
         - Change the subheader-text to whatever header you want
         - Add paragraphs using the <div class="body-text"></div> elements in the "about-section-content"
       -->
-      <div id="description-section">
-        <span class="subheader-text">Project Description</span>
+      <div id="project-details">
+        <span class="subheader-text">Description</span>
 
-        <div class="about-section-content">
+        <div class="project-details-content">
           <div class="body-text">Image restoration is an issue which aims to recover parts of an image that have degraded significantly making manual re-touching tools infeasible to use due to the volume and variation of the damage. Proposed is a new automated process of image restoration based on Generative Adversarial Networks which is transferable, efficient and minimises information loss.</div>
           <div class="body-text">7 synthetically damaged datasets containing input damaged images
             and target clean images have been produced using two evolutions of damage templates which variate in
@@ -81,6 +86,39 @@
             <div class="body-text"> Image quality is preserved using an image processing tool which encapsulates each small input size model and allow any size image to be accepted as input. It was found that Pix2Pix significantly outperformed CycleGAN in areas of colour accuracy, noise reduction, and structure preservation whilst successfully removing dust and scratch artefacts from a testing dataset.</div>
             <div class="body-text">This work provides an automated method which adapts to different variations of scratches and volumes of dust particles to restore a damaged image of any size to its original form whilst preserving image quality.</div>
           </div>
+
+          <div id="project-details">
+            <span class="subheader-text">Technologies Used</span>
+            <div class="project-details-content">
+            </div>
+            <div class="technologies">
+              <ul class="icon-list">
+                <li><i class="fab fa-python body-text"></i> Python 3</li>
+                <li><i class="fab fa-python body-text"></i> TensorFlow</li>
+                <li><i class="fab fa-python body-text"></i> Keras</li>
+                <li><i class="fab fa-python body-text"></i> Google Colab / Jupyter Notebook</li>
+              </ul>
+            </div>
+            
+
+          </div>
+
+          <!-- <div id="project-details">
+            <span class="subheader-text">Demonstration</span>
+            <div class="project-details-content">
+              <div class="body-text">Test</div>
+
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/aHgceB5vzhk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+            </div>
+          </div> -->
+      
+
+      <div class="project-button-container">
+
+        <a href="nothing.com" class="button-object" type="button"><span class="button-text">Research Paper</span></a>
+        <a href="nothing.com" class="button-object" type="button"><span class="button-text">GitHub Repository</span></a>
+
       </div>
 
 
