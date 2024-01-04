@@ -1,6 +1,6 @@
 # Portfolio Website
 
-* Domain Name: benthompsonwatson.co.uk
+* Domain Name: benthompson-watson.co.uk
 
 ## TODO:
 
